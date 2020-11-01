@@ -1,0 +1,25 @@
+.container {
+   width: 90%;
+   margin: auto;
+}
+
+img {
+   width: 100%;
+}
+
+.text-primary {
+   color: $primary-color;
+}
+
+a {
+   color: $dark-color;
+   text-decoration: none;
+}
+
+ul {
+   list-style: none;
+}
+
+@mixin easeOut {
+   transition: all ease-out 0.3s;
+}
