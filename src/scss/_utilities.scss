@@ -7,6 +7,10 @@ img {
    width: 100%;
 }
 
+@mixin easeOut {
+   transition: all ease-out 0.3s;
+}
+
 .text-primary {
    color: $primary-color;
 }
@@ -20,6 +24,66 @@ ul {
    list-style: none;
 }
 
-@mixin easeOut {
-   transition: all ease-out 0.3s;
+// Schedule
+.schedule {
+   background-color: $primary-color;
+   color: $light-color;
+   text-align: center;
+   padding: 1rem;
+
+   h3 {
+      font-size: 1.5rem;
+   }
+
+   button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: darken($primary-color, 10%);
+      border: none;
+      outline: none;
+      color: $light-color;
+      font-weight: bold;
+      cursor: pointer;
+      @include easeOut;
+
+      i {
+         margin-left: 0.5rem;
+      }
+
+      &:hover {
+         background-color: darken($primary-color, 20%);
+         transform: scale(0.9);
+      }
+   }
+}
+
+// News and Events
+.news-events {
+   background-color: $light-color;
+
+   .contents {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10rem;
+      padding: 2rem 0;
+
+      div {
+         text-align: center;
+         background-color: $primary-color;
+         padding: 2rem 1rem;
+         box-shadow: 0px 0px 5px $dark-color;
+
+         a {
+            color: $light-color;
+         }
+      }
+
+      .events {
+         background-color: $grey-color;
+
+         a {
+            color: $primary-color;
+         }
+      }
+   }
 }

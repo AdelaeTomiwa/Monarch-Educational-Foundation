@@ -1,5 +1,7 @@
 @import 'config';
 @import 'utilities';
+@import 'home';
+@import 'about';
 
 * {
    margin: 0;
@@ -18,7 +20,7 @@ body {
 }
 
 header {
-   box-shadow: 5px 0px 20px $grey-color;
+   box-shadow: 5px 0px 20px $dark-color;
    position: fixed;
    top: 0;
    left: 0;
@@ -136,176 +138,83 @@ header {
    }
 }
 
-.home {
-   margin-top: 8rem;
-}
+// Footer
+footer {
+   background-color: $grey-color;
 
-// Showcase
-.showcase {
-   &-img {
-      height: 70vh;
-      position: relative;
+   .footer {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10rem;
+      text-align: center;
+      padding: 2rem 5rem;
 
-      .showcase-content {
-         position: absolute;
-         top: 30%;
-         // left: 0;
-         background-color: rgba($grey-color, 0.6);
-         padding: 1rem 2rem;
+      .first-half {
+         padding: 0.5rem 2rem;
 
-         h1 {
-            font-size: 3rem;
-         }
+         &:first-child {
+            text-align: left;
 
-         h4 {
-            color: lighten($dark-color, 10%);
-         }
-
-         button {
-            padding: 0.5rem 1rem;
-            border: none;
-            outline: none;
-            background-color: $primary-color;
-            color: $light-color;
-            font-weight: bold;
-            font-size: 0.8rem;
-            margin: 1rem 0;
-            cursor: pointer;
-            @include easeOut;
-
-            &:hover {
-               background-color: $light-color;
+            .logo {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               flex-direction: column;
                color: $primary-color;
+               margin: 1rem 0;
+            }
+
+            ul {
+               margin-left: 2rem;
+
+               li {
+                  font-size: 0.9rem;
+                  margin: 0.8rem 0;
+
+                  a {
+                     color: $primary-color;
+
+                     &:hover {
+                        text-decoration: underline;
+                     }
+                  }
+               }
+            }
+
+            .second-child {
+               border-top: 2px solid lighten($dark-color, 50%);
             }
          }
       }
 
-      img {
-         height: 100%;
-      }
-   }
-}
-
-// Who We are
-.info-one {
-   padding-top: 2rem;
-   background-color: $light-color;
-
-   .boxes {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 4rem;
-      padding: 1rem;
-
-      div {
-         padding: 0.5rem;
-         cursor: pointer;
-         text-align: center;
-         box-shadow: 0px 0 15px $dark-color;
-      }
-   }
-}
-
-.who-we-are {
-   background-color: $grey-color;
-   padding: 1rem 0;
-
-   .boxes {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 4rem;
-      padding: 1rem;
-
-      div {
-         padding: 0.5rem;
-         text-align: center;
-      }
-
-      img {
-         box-shadow: 0px 0 15px $dark-color;
-      }
-
-      .content {
+      .second-half {
+         padding: 0.5rem 2rem;
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
          margin-top: 20vh;
 
-         h3 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
+         ul {
+            li {
+               font-size: 0.9rem;
+               margin: 0.8rem 0;
+               text-align: left;
+
+               &:hover {
+                  text-decoration: underline;
+               }
+            }
+            .social {
+               a {
+                  color: $primary-color;
+               }
+            }
          }
       }
    }
-   .quote {
+
+   .main-footer {
+      background-color: darken($grey-color, 20%);
       text-align: center;
-      width: 40%;
-      margin: 1rem auto;
-      font-weight: bold;
-
-      small {
-         color: lighten($dark-color, 10%);
-         font-size: 0.7rem;
-      }
-   }
-}
-
-// Schedule
-.schedule {
-   background-color: $primary-color;
-   color: $light-color;
-   text-align: center;
-   padding: 1rem;
-
-   h3 {
-      font-size: 1.5rem;
-   }
-
-   button {
-      margin-top: 1rem;
-      padding: 0.5rem 1rem;
-      background-color: darken($primary-color, 10%);
-      border: none;
-      outline: none;
-      color: $light-color;
-      font-weight: bold;
-      cursor: pointer;
-      @include easeOut;
-
-      i {
-         margin-left: 0.5rem;
-      }
-
-      &:hover {
-         background-color: darken($primary-color, 20%);
-      }
-   }
-}
-
-// News and Events
-.news-events {
-   background-color: $light-color;
-
-   .contents {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 10rem;
-      padding: 2rem 0;
-
-      div {
-         text-align: center;
-         background-color: $primary-color;
-         padding: 2rem 1rem;
-         box-shadow: 0px 0px 5px $dark-color;
-
-         a {
-            color: $light-color;
-         }
-      }
-
-      .events {
-         background-color: $grey-color;
-
-         a {
-            color: $primary-color;
-         }
-      }
+      padding: 1rem 0;
    }
 }

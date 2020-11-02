@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ShowcaseImg from '../../images/showcase.jpg';
+import ShowcaseImg from '../../images/showcase-home.jpg';
 
 function Showcase() {
    return (

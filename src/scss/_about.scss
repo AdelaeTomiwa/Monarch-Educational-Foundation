@@ -1,0 +1,201 @@
+.about {
+   margin-top: 8rem;
+
+   // Showcase
+   .showcase {
+      &-img {
+         height: 70vh;
+         position: relative;
+
+         .showcase-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 70%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+            background-color: rgba($grey-color, 0.6);
+            padding: 1rem 2rem;
+            box-shadow: 0px 0px 50px $dark-color;
+
+            h1 {
+               font-size: 3rem;
+            }
+
+            h4 {
+               color: lighten($dark-color, 10%);
+            }
+
+            button {
+               padding: 0.5rem 1rem;
+               border: none;
+               outline: none;
+               background-color: $primary-color;
+               color: $light-color;
+               font-weight: bold;
+               font-size: 0.8rem;
+               margin: 1rem 0;
+               cursor: pointer;
+               @include easeOut;
+
+               &:hover {
+                  background-color: $light-color;
+                  color: $primary-color;
+               }
+            }
+         }
+
+         img {
+            height: 100%;
+         }
+      }
+   }
+
+   // Who We Are
+   .who-we-are {
+      background-color: $light-color;
+      text-align: center;
+      padding: 1rem 0 2rem 0;
+
+      h2 {
+         margin: 0.5rem 0 1rem 0;
+      }
+
+      p {
+         width: 75%;
+         margin: auto;
+      }
+   }
+
+   // Info One
+   .info-one {
+      background-color: $grey-color;
+
+      .boxes {
+         display: grid;
+         grid-template-columns: repeat(2, 2fr);
+         grid-gap: 2rem;
+         padding: 2rem;
+         text-align: center;
+
+         div {
+            padding: 1rem 0;
+            h3 {
+               margin: 1rem 0;
+               font-weight: bold;
+            }
+
+            p {
+               width: 80%;
+               margin: auto;
+            }
+
+            a {
+               color: $primary-color;
+               margin: 2rem 0;
+               display: inline-block;
+               font-weight: bold;
+            }
+
+            img {
+               width: 500px;
+               height: 350px;
+            }
+         }
+      }
+   }
+
+   // Info Two
+   .info-two {
+      background-color: $light-color;
+
+      .boxes {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         grid-gap: 2rem;
+
+         div:first-child {
+            margin-left: 5rem;
+            h3 {
+               margin-top: 20vh;
+               font-size: 1.5rem;
+            }
+
+            p {
+               width: 80%;
+               margin-top: 1rem;
+            }
+         }
+
+         .img-container {
+            height: 400px;
+            box-shadow: 0px 0px 2px $dark-color;
+         }
+
+         img {
+            height: 100%;
+            width: 100%;
+         }
+      }
+   }
+
+   // Connect Social
+   .connect-social {
+      text-align: center;
+      background-color: $grey-color;
+      padding: 2rem 0;
+
+      h3 {
+         margin: 0.5rem 0 1rem 0;
+      }
+
+      .boxes {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         grid-gap: 5rem;
+         margin-bottom: 1rem;
+
+         a {
+            color: $light-color;
+         }
+
+         div {
+            padding: 0.3rem 0;
+            box-shadow: 0px 0px 5px $dark-color;
+            @include easeOut;
+
+            &:hover {
+               transform: scale(0.9);
+            }
+         }
+
+         .facebook-div {
+            background-color: #4267b2;
+         }
+
+         .twitter-div {
+            background-color: #1da1f2;
+         }
+
+         .instagram-div {
+            background-color: #3f729b;
+         }
+      }
+
+      .connect-details {
+         h4 {
+            font-size: 1.2rem;
+         }
+
+         h5 {
+            font-weight: lighter;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+         }
+
+         p {
+            font-size: 0.9rem;
+         }
+      }
+   }
+}

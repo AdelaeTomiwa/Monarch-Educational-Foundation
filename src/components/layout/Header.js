@@ -23,10 +23,12 @@ function Header() {
          <nav>
             <div className='container'>
                <div className='nav'>
-                  <div className='logo'>
-                     <h2>Monarch Educational</h2>
-                     <h4>Foundation</h4>
-                  </div>
+                  <Link to='/'>
+                     <div className='logo'>
+                        <h2>Monarch Educational</h2>
+                        <h4>Foundation</h4>
+                     </div>
+                  </Link>
                   <div className='nav-links'>
                      <div>
                         <h5>

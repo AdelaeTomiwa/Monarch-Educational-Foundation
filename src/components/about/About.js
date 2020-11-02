@@ -1,15 +1,21 @@
 import React from 'react';
 import Showcase from './Showcase';
 import WhoWeAre from './WhoWeAre';
+import InfoOne from './InfoOne';
+import InfoTwo from './InfoTwo';
+import ConnectSocial from './ConnectSocial';
 import Schedule from './../layout/Schedule';
 import NewsAndEvents from './../layout/NewsAndEvents';
 import Footer from '../layout/Footer';
 
-function Home() {
+function About() {
    return (
-      <div className='home'>
+      <div className='about'>
          <Showcase />
          <WhoWeAre />
+         <InfoOne />
+         <InfoTwo />
+         <ConnectSocial />
          <Schedule />
          <NewsAndEvents />
          <Footer />
@@ -17,4 +23,4 @@ function Home() {
    );
 }
 
-export default Home;
+export default About;

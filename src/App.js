@@ -5,6 +5,7 @@ import './style.css';
 // Importing Components
 import Header from './components/layout/Header';
 import Home from './components/home/Home';
+import About from './components/about/About';
 
 function App() {
    return (
@@ -12,7 +13,8 @@ function App() {
          <React.Fragment>
             <Header />
             <Switch>
-               <Route path='/' component={Home} />
+               <Route path='/' exact component={Home} />
+               <Route path='/about' component={About} />
             </Switch>
          </React.Fragment>
       </Router>
