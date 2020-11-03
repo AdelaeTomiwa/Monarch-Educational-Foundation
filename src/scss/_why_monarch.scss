@@ -1,0 +1,160 @@
+.why-monarch {
+   // Showcase
+   .showcase {
+      &-img {
+         height: 70vh;
+         position: relative;
+
+         .showcase-content {
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            width: 70%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+            background-color: rgba($grey-color, 0.6);
+            padding: 1rem 2rem;
+            box-shadow: 0px 0px 50px $dark-color;
+
+            h1 {
+               font-size: 3rem;
+            }
+
+            h4 {
+               color: lighten($dark-color, 10%);
+            }
+
+            button {
+               padding: 0.5rem 1rem;
+               border: none;
+               outline: none;
+               background-color: $primary-color;
+               color: $light-color;
+               font-weight: bold;
+               font-size: 0.8rem;
+               margin: 1rem 0;
+               cursor: pointer;
+               @include easeOut;
+
+               &:hover {
+                  background-color: $light-color;
+                  color: $primary-color;
+               }
+            }
+         }
+
+         img {
+            height: 100%;
+         }
+      }
+   }
+
+   // Info One
+   .info-one {
+      background-color: $light-color;
+      padding: 1rem 0;
+      h3 {
+         font-size: 1.5rem;
+         text-align: center;
+         margin: 1rem 0;
+      }
+
+      p {
+         text-align: center;
+         width: 80%;
+         margin: auto;
+         margin-bottom: 1rem;
+      }
+
+      .boxes {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         grid-gap: 2rem;
+         margin-top: 1rem;
+
+         .img-container {
+            height: 400px;
+
+            img {
+               height: 100%;
+            }
+         }
+      }
+   }
+
+   // Mission
+   .mission {
+      background-color: $grey-color;
+      padding: 1.5rem 0 0;
+
+      h3 {
+         font-size: 1.5rem;
+         margin-bottom: 0.5rem;
+      }
+
+      p {
+         width: 50%;
+         margin: 0.3rem 0 1rem;
+      }
+
+      h5 {
+         margin: 0.5rem 0;
+      }
+
+      .img-container {
+         height: 400px;
+         width: 100%;
+         margin: 1rem auto;
+         background-color: $light-color;
+         padding: 2rem;
+
+         img {
+            height: 100%;
+         }
+      }
+   }
+
+   // Vision
+   .vision {
+      background-color: $grey-color;
+      padding: 1.5rem 0 0;
+
+      h3 {
+         font-size: 1.5rem;
+         margin-bottom: 0.5rem;
+      }
+
+      p {
+         width: 50%;
+         margin: 0.3rem 0 1rem;
+      }
+
+      h5 {
+         margin: 0.5rem 0;
+      }
+
+      .img-container {
+         height: 400px;
+         width: 100%;
+         margin: 1rem auto;
+         background-color: $light-color;
+         padding: 2rem;
+
+         img {
+            height: 100%;
+         }
+      }
+   }
+
+   // Apply Now
+   .apply-now {
+      text-align: center;
+      background-color: $grey-color;
+      padding: 1.5rem 0;
+
+      a {
+         font-size: 1rem;
+         margin-top: 0.3rem;
+      }
+   }
+}

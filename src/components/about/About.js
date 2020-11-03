@@ -3,7 +3,7 @@ import Showcase from './Showcase';
 import WhoWeAre from './WhoWeAre';
 import InfoOne from './InfoOne';
 import InfoTwo from './InfoTwo';
-import ConnectSocial from './ConnectSocial';
+import ConnectSocial from './../layout/ConnectSocial';
 import Schedule from './../layout/Schedule';
 import NewsAndEvents from './../layout/NewsAndEvents';
 import Footer from '../layout/Footer';

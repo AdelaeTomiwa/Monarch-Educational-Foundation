@@ -52,7 +52,6 @@ ul {
 
       &:hover {
          background-color: darken($primary-color, 20%);
-         transform: scale(0.9);
       }
    }
 }
@@ -84,6 +83,66 @@ ul {
          a {
             color: $primary-color;
          }
+      }
+   }
+}
+
+// Connect Social
+.connect-social {
+   text-align: center;
+   background-color: $grey-color;
+   padding: 2rem 0;
+
+   h3 {
+      margin: 0.5rem 0 1rem 0;
+   }
+
+   .boxes {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 5rem;
+      margin-bottom: 1rem;
+
+      a {
+         color: $light-color;
+      }
+
+      div {
+         padding: 0.3rem 0;
+         box-shadow: 0px 0px 5px $dark-color;
+         @include easeOut;
+
+         &:hover {
+            transform: scale(0.9);
+         }
+      }
+
+      .facebook-div {
+         background-color: #4267b2;
+      }
+
+      .twitter-div {
+         background-color: #1da1f2;
+      }
+
+      .instagram-div {
+         background-color: #3f729b;
+      }
+   }
+
+   .connect-details {
+      h4 {
+         font-size: 1.2rem;
+      }
+
+      h5 {
+         font-weight: lighter;
+         font-size: 1rem;
+         margin-bottom: 0.5rem;
+      }
+
+      p {
+         font-size: 0.9rem;
       }
    }
 }

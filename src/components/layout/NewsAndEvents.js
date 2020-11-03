@@ -12,6 +12,7 @@ function NewsAndEvents() {
                      <p>Get Latest News About Monarch</p>
                   </Link>
                </div>
+
                <div className='events'>
                   <Link to='/news-events/events'>
                      <h3>Events</h3>

@@ -36,12 +36,8 @@ function Header() {
                            (0909) 870-9973
                         </h5>
                         <div>
-                           <i className='fas fa-search'></i>
-                           <input
-                              type='text'
-                              placeholder='Search'
-                              className='search'
-                           />
+                           <i className='fas fa-envelope'></i>
+                           <h5>monarchedu@gmail.com</h5>
                         </div>
                      </div>
                      <div>
@@ -50,13 +46,13 @@ function Header() {
                               <Link to='/about'>About Monarch</Link>
                            </li>
                            <li>
-                              <Link to='admissions'>Admissions</Link>
+                              <Link to='/admissions'>Admissions</Link>
                            </li>
                            <li>
-                              <Link to='academics'>Academics</Link>
+                              <Link to='/academics'>Academics</Link>
                            </li>
                            <li>
-                              <Link to='why-monarch'>Why Monarch</Link>
+                              <Link to='/why-monarch'>Why Monarch</Link>
                            </li>
                         </ul>
                      </div>
