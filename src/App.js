@@ -13,6 +13,7 @@ import Events from './components/events/Events';
 import Calender from './components/calender/Calender';
 import Directions from './components/directions/Directions';
 import Academics from './components/academics/Academics';
+import Uniform from './components/uniform/Uniform';
 
 function App() {
    return (
@@ -29,6 +30,7 @@ function App() {
                <Route path='/calender' component={Calender} />
                <Route path='/directions' component={Directions} />
                <Route path='/academics' component={Academics} />
+               <Route path='/uniform/information' component={Uniform} />
             </Switch>
          </React.Fragment>
       </Router>

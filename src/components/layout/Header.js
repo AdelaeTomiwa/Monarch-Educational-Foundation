@@ -46,9 +46,6 @@ function Header() {
                               <Link to='/about'>About Monarch</Link>
                            </li>
                            <li>
-                              <Link to='/admissions'>Admissions</Link>
-                           </li>
-                           <li>
                               <Link to='/academics'>Academics</Link>
                            </li>
                            <li>

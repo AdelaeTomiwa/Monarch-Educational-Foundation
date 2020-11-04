@@ -49,10 +49,10 @@ function Footer() {
                            <Link to='/about'>About Monarch</Link>
                         </li>
                         <li>
-                           <Link to='/admission'>Admission</Link>
+                           <Link to='/academics'>Academics</Link>
                         </li>
                         <li>
-                           <Link to='/academics'>Academics</Link>
+                           <Link to='/why-monarch'>Why Monarch</Link>
                         </li>
                      </ul>
                   </div>
@@ -62,7 +62,9 @@ function Footer() {
                            <Link to='/calender'>Calender</Link>
                         </li>
                         <li>
-                           <Link to='/staff'>Staff</Link>
+                           <Link to='/uniform/information'>
+                              Uniform Information
+                           </Link>
                         </li>
                         <li className='social'>
                            <Link to='https://facebook.com/animefrida'>

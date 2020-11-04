@@ -1,0 +1,113 @@
+.uniform {
+   margin-top: 8rem;
+
+   // Showcase
+   .showcase {
+      &-img {
+         height: 70vh;
+         position: relative;
+
+         .showcase-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 50%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+            background-color: rgba($grey-color, 0.6);
+            padding: 1rem 2rem;
+            box-shadow: 0px 0px 50px $dark-color;
+
+            h1 {
+               font-size: 3rem;
+            }
+
+            h4 {
+               color: lighten($dark-color, 10%);
+            }
+
+            button {
+               padding: 0.5rem 1rem;
+               border: none;
+               outline: none;
+               background-color: $primary-color;
+               color: $light-color;
+               font-weight: bold;
+               font-size: 0.8rem;
+               margin: 1rem 0;
+               cursor: pointer;
+               @include easeOut;
+
+               &:hover {
+                  background-color: $light-color;
+                  color: $primary-color;
+               }
+            }
+         }
+
+         img {
+            height: 100%;
+         }
+      }
+   }
+
+   .info-one {
+      padding: 1.5rem;
+   }
+
+   .school-wears {
+      background-color: $grey-color;
+      padding: 1.5rem 0;
+
+      .boxes {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         grid-gap: 2rem;
+         text-align: center;
+
+         div {
+            height: 400px;
+            width: 400px;
+            background-color: $light-color;
+            box-shadow: 0px 0px 10px $dark-color;
+            overflow: hidden;
+
+            h3 {
+               margin: 0 0 0.5rem 0;
+            }
+            img {
+               height: 100%;
+               object-fit: contain;
+            }
+         }
+      }
+   }
+
+   .other-wears {
+      background-color: $light-color;
+      padding: 2rem 0;
+
+      .boxes {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         grid-gap: 2rem;
+         text-align: center;
+
+         div {
+            height: 400px;
+            width: 400px;
+            background-color: $light-color;
+            box-shadow: 0px 0px 10px $dark-color;
+            overflow: hidden;
+
+            h3 {
+               margin: 0 0 0.5rem 0;
+            }
+            img {
+               height: 100%;
+               object-fit: contain;
+            }
+         }
+      }
+   }
+}
