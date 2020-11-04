@@ -9,6 +9,9 @@ import About from './components/about/About';
 import WhyMonarch from './components/why-monarch/WhyMonarch';
 import Contact from './components/contact/Contact';
 import News from './components/news/News';
+import Events from './components/events/Events';
+import Calender from './components/calender/Calender';
+import Directions from './components/directions/Directions';
 
 function App() {
    return (
@@ -21,6 +24,9 @@ function App() {
                <Route path='/why-monarch' component={WhyMonarch} />
                <Route path='/contact' component={Contact} />
                <Route path='/news-events/news' component={News} />
+               <Route path='/news-events/events' component={Events} />
+               <Route path='/calender' component={Calender} />
+               <Route path='/directions' component={Directions} />
             </Switch>
          </React.Fragment>
       </Router>
