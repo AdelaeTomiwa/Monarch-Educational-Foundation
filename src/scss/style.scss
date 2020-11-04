@@ -8,6 +8,7 @@
 @import 'events';
 @import 'calender';
 @import 'directions';
+@import 'academics';
 
 * {
    margin: 0;
@@ -23,6 +24,7 @@ body {
    min-width: 100%;
    background-color: $light-color;
    color: $dark-color;
+   overflow-x: hidden;
 }
 
 header {

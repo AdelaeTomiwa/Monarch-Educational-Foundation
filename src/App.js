@@ -12,6 +12,7 @@ import News from './components/news/News';
 import Events from './components/events/Events';
 import Calender from './components/calender/Calender';
 import Directions from './components/directions/Directions';
+import Academics from './components/academics/Academics';
 
 function App() {
    return (
@@ -27,6 +28,7 @@ function App() {
                <Route path='/news-events/events' component={Events} />
                <Route path='/calender' component={Calender} />
                <Route path='/directions' component={Directions} />
+               <Route path='/academics' component={Academics} />
             </Switch>
          </React.Fragment>
       </Router>

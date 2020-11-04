@@ -1,5 +1,6 @@
 import React from 'react';
 import VehicleImg from '../../images/vehicle.jpg';
+import MapContainer from './MapContainer';
 
 function TravelInfo() {
    return (
@@ -36,6 +37,14 @@ function TravelInfo() {
                      Orita-Challenge. Monarch is less than 10 Minutes drive from
                      Orita-Chalenge.
                   </p>
+               </div>
+            </div>
+            <div className='boxes'>
+               <div className='map-content'>
+                  <h3>Map</h3>
+               </div>
+               <div className='img-container'>
+                  <MapContainer />
                </div>
             </div>
          </div>

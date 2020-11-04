@@ -1,4 +1,4 @@
-.direction {
+.academics {
    margin-top: 8rem;
 
    // Showcase
@@ -48,48 +48,6 @@
          img {
             height: 100%;
          }
-      }
-   }
-
-   .info-one {
-      padding: 1rem 0;
-      h2 {
-         margin: 0.5rem 0;
-      }
-   }
-
-   .travel-info {
-      background-color: $grey-color;
-      padding: 1rem 0;
-      // margin-bottom: 10vh;
-
-      h3 {
-         font-size: 1.3rem;
-         margin: 1rem 0 0 0;
-      }
-      .boxes {
-         display: grid;
-         grid-gap: 7rem;
-         grid-template-columns: repeat(2, 1fr);
-
-         .travel-content {
-            margin-top: 10vh;
-         }
-
-         .img-container {
-            height: 400px;
-            width: 500px;
-
-            img {
-               height: 100%;
-               object-fit: contain;
-            }
-         }
-      }
-
-      .map-content {
-         margin-top: 10vh;
-         margin-left: 5rem;
       }
    }
 }
