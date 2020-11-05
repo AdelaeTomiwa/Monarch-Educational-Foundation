@@ -1,0 +1,335 @@
+@media screen and (max-width: 680px) {
+   // Home
+   .home {
+      // Showcase
+      .showcase {
+         &-img {
+            .showcase-content {
+               h1 {
+                  font-size: 1.5rem;
+               }
+
+               button {
+                  font-size: 0.7rem;
+               }
+            }
+         }
+      }
+
+      // Who We are
+      .info-one {
+         padding: 2rem 0;
+
+         .boxes {
+            grid-template-columns: 1fr;
+            grid-gap: 4rem;
+
+            div {
+               height: 200px;
+
+               h3 {
+                  margin-top: 1rem;
+               }
+
+               img {
+                  height: 100%;
+                  object-fit: cover;
+               }
+            }
+         }
+      }
+
+      .who-we-are {
+         background-color: $grey-color;
+         padding: 1rem 0;
+
+         .boxes {
+            grid-template-columns: 1fr;
+            grid-gap: 1rem;
+
+            .content {
+               margin-top: 0vh;
+
+               h3 {
+                  font-size: 1.5rem;
+                  margin-bottom: 0.5rem;
+               }
+            }
+         }
+         .quote {
+            display: none;
+         }
+      }
+   }
+
+   // About
+   .about {
+      // Who We Are
+      .who-we-are {
+         p {
+            width: 95%;
+         }
+      }
+
+      // Info One
+      .info-one {
+         .boxes {
+            grid-template-columns: 1fr;
+            grid-gap: 0rem;
+
+            div {
+               .img-container {
+                  height: 300px;
+               }
+            }
+         }
+      }
+
+      // Info Two
+      .info-two {
+         text-align: center;
+         .boxes {
+            grid-template-columns: 1fr;
+            grid-gap: 1rem;
+
+            div:first-child {
+               margin-left: 0rem;
+
+               h3 {
+                  margin-top: 2vh;
+               }
+
+               p {
+                  width: 90%;
+                  margin: 1rem auto;
+               }
+            }
+
+            .img-container {
+               height: 400px;
+            }
+         }
+      }
+   }
+
+   // Academics
+   .academics {
+      .head-profile {
+         .boxes {
+            grid-template-columns: 1fr;
+            text-align: center;
+         }
+
+         &-img {
+            margin-left: 50%;
+            transform: translateX(-50%);
+         }
+
+         &-content {
+            width: 90%;
+            margin: auto;
+         }
+      }
+
+      .curriculum-box {
+         .boxes {
+            grid-template-columns: 1fr;
+         }
+      }
+
+      .age-group {
+         .boxes {
+            grid-template-columns: repeat(2, 1fr);
+         }
+      }
+   }
+
+   // Why monarch
+   .why-monarch {
+      // Info One
+      .info-one {
+         .boxes {
+            grid-template-columns: 1fr;
+
+            .img-container {
+               height: 300px;
+            }
+         }
+      }
+   }
+
+   // Directions
+   .direction {
+      .info-one {
+         padding: 1rem 0;
+         h2 {
+            margin: 0.5rem 0;
+         }
+      }
+
+      .travel-info {
+         .boxes {
+            grid-template-columns: 1fr;
+
+            .travel-content {
+               margin-top: 0vh;
+            }
+
+            .img-container {
+               height: 400px;
+            }
+         }
+
+         .map-content {
+            margin-top: 0vh;
+            margin-left: 0rem;
+         }
+      }
+   }
+
+   // News
+   .news-section {
+      .latest-news {
+         .news-container {
+            .news {
+               &-content {
+                  p {
+                     display: none;
+                  }
+               }
+            }
+         }
+      }
+
+      .latest-events {
+         padding: 0.5rem;
+
+         p {
+            display: none;
+         }
+      }
+   }
+
+   // Events
+   .events-section {
+      .latest-events {
+         .events-container {
+            .events {
+               &-content {
+                  p {
+                     display: none;
+                  }
+               }
+            }
+         }
+      }
+
+      .latest-news {
+         padding: 0.5rem;
+
+         p {
+            display: none;
+         }
+      }
+   }
+
+   // Connect Social
+   .connect-social {
+      padding: 0.5rem 0;
+      .connect-details {
+         display: none;
+      }
+   }
+
+   // News and Events
+   .news-events {
+      .contents {
+         grid-template-columns: 1fr;
+      }
+   }
+
+   // Schedule
+   .schedule {
+      h3 {
+         font-size: 1rem;
+      }
+   }
+
+   // News
+
+   // Footer
+   footer {
+      .footer {
+         display: none;
+      }
+   }
+}
+
+@media screen and (max-width: 580px) {
+   // Home
+   .home {
+      // Showcase
+      .showcase {
+         &-img {
+            .showcase-content {
+               h4 {
+                  display: none;
+               }
+            }
+         }
+      }
+
+      .who-we-are {
+         .quote {
+            display: none;
+         }
+      }
+   }
+
+   // About
+   .about {
+      // Info One
+      .info-one {
+         background-color: $grey-color;
+
+         .boxes {
+            div {
+               p {
+                  display: none;
+               }
+
+               a {
+                  margin: 0.5rem 0;
+               }
+            }
+         }
+      }
+   }
+
+   // News and Events
+   .news-events {
+      .contents {
+         div {
+            padding: 0.5rem;
+         }
+      }
+   }
+
+   // Schedule
+   .schedule {
+      padding: 0.5rem;
+   }
+
+   // Calender
+   .calender {
+      .calender-container {
+         .calender-box {
+            .calender-content {
+               p {
+                  display: none;
+               }
+            }
+         }
+      }
+   }
+}

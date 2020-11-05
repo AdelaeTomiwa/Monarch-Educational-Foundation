@@ -11,7 +11,7 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            width: 70%;
+            width: 80%;
             text-align: center;
             transform: translate(-50%, -50%);
             background-color: rgba($grey-color, 0.6);
@@ -21,32 +21,11 @@
             h1 {
                font-size: 3rem;
             }
-
-            h4 {
-               color: lighten($dark-color, 10%);
-            }
-
-            button {
-               padding: 0.5rem 1rem;
-               border: none;
-               outline: none;
-               background-color: $primary-color;
-               color: $light-color;
-               font-weight: bold;
-               font-size: 0.8rem;
-               margin: 1rem 0;
-               cursor: pointer;
-               @include easeOut;
-
-               &:hover {
-                  background-color: $light-color;
-                  color: $primary-color;
-               }
-            }
          }
 
          img {
             height: 100%;
+            object-fit: cover;
          }
       }
    }
@@ -97,9 +76,16 @@
                font-weight: bold;
             }
 
-            img {
-               width: 500px;
-               height: 350px;
+            .img-container {
+               // height: 40%;
+               width: 100%;
+               // width: 400px;
+               height: 400px;
+               overflow: hidden;
+               img {
+                  height: 100%;
+                  object-fit: cover;
+               }
             }
          }
       }
@@ -129,12 +115,14 @@
 
          .img-container {
             height: 400px;
-            box-shadow: 0px 0px 2px $dark-color;
-         }
-
-         img {
-            height: 100%;
             width: 100%;
+            box-shadow: 0px 0px 2px $dark-color;
+
+            img {
+               height: 100%;
+               // width: 100%;
+               object-fit: cover;
+            }
          }
       }
    }

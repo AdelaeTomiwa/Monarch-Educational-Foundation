@@ -12,8 +12,6 @@ function Directions() {
          <Showcase />
          <InfoOne />
          <TravelInfo />
-         {/* <MapContainer /> */}
-
          <ConnectSocial />
          <Footer />
       </div>

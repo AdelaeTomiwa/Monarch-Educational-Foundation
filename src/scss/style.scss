@@ -145,7 +145,7 @@ footer {
    .footer {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-gap: 10rem;
+      grid-gap: 2rem;
       text-align: center;
       padding: 2rem 5rem;
 
@@ -191,7 +191,7 @@ footer {
          padding: 0.5rem 2rem;
          display: grid;
          grid-template-columns: repeat(2, 1fr);
-         margin-top: 20vh;
+         margin-top: 10vh;
 
          ul {
             li {
@@ -218,3 +218,6 @@ footer {
       padding: 1rem 0;
    }
 }
+
+@import 'mobile';
+@import 'mobile_smart_phones';

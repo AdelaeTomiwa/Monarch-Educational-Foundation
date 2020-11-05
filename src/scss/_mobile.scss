@@ -1,0 +1,514 @@
+@media screen and (max-width: 1240px) {
+   //Home
+   .home {
+      // Showcase
+      .showcase {
+         &-img {
+            height: 70vh;
+            position: relative;
+
+            .showcase-content {
+               position: absolute;
+               top: 30%;
+               background-color: rgba($grey-color, 0.6);
+               padding: 1rem 2rem;
+               box-shadow: 0px 0px 50px $dark-color;
+
+               h1 {
+                  font-size: 2.5rem;
+               }
+
+               h4 {
+                  color: lighten($dark-color, 10%);
+               }
+
+               button {
+                  padding: 0.5rem 1rem;
+                  border: none;
+                  outline: none;
+                  background-color: $primary-color;
+                  color: $light-color;
+                  font-weight: bold;
+                  font-size: 0.8rem;
+                  margin: 1rem 0;
+                  cursor: pointer;
+                  @include easeOut;
+
+                  &:hover {
+                     background-color: $light-color;
+                     color: $primary-color;
+                  }
+               }
+            }
+
+            img {
+               height: 100%;
+               object-fit: cover;
+            }
+         }
+      }
+      .who-we-are {
+         .quote {
+            width: 50%;
+         }
+      }
+   }
+
+   // About Page
+   .about {
+      // Showcase
+      .showcase {
+         &-img {
+            .showcase-content {
+               h1 {
+                  font-size: 2.5rem;
+               }
+            }
+         }
+      }
+   }
+
+   // Academics
+   .academics {
+      // Showcase
+      .showcase {
+         &-img {
+            .showcase-content {
+               h1 {
+                  font-size: 2.5rem;
+               }
+            }
+         }
+      }
+   }
+
+   // Why Monarch
+   .why-monarch {
+      // Showcase
+      .showcase {
+         &-img {
+            .showcase-content {
+               h1 {
+                  font-size: 2.5rem;
+               }
+            }
+         }
+      }
+   }
+
+   // Contact
+   .contact {
+      .showcase {
+         // Showcase
+         .showcase {
+            &-img {
+               .showcase-content {
+                  h1 {
+                     font-size: 2.5rem;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   // Calender
+   .calender {
+      // Showcase
+      .showcase {
+         &-img {
+            .showcase-content {
+               h1 {
+                  font-size: 2.5rem;
+               }
+            }
+         }
+      }
+   }
+
+   // Directions
+   .direction {
+      // Showcase
+      .showcase {
+         &-img {
+            .showcase-content {
+               h1 {
+                  font-size: 2.5rem;
+               }
+            }
+         }
+      }
+   }
+
+   // News
+   .news-section {
+      .showcase {
+         // Showcase
+         .showcase {
+            &-img {
+               .showcase-content {
+                  h1 {
+                     font-size: 2.5rem;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   // Events
+   .events-section {
+      .showcase {
+         // Showcase
+         .showcase {
+            &-img {
+               .showcase-content {
+                  h1 {
+                     font-size: 2.5rem;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 1024px) {
+   // About
+   .about {
+      // Showcase
+      .showcase {
+         &-img {
+            .showcase-content {
+               width: 90%;
+            }
+         }
+      }
+   }
+
+   // Academics
+   .academics {
+      // Showcase
+      .showcase {
+         &-img {
+            .showcase-content {
+               width: 95%;
+            }
+         }
+      }
+
+      .head-profile {
+         .boxes {
+            grid-gap: 2rem;
+         }
+      }
+   }
+
+   // Why Monarch
+   .why-monarch {
+      // Showcase
+      .showcase {
+         &-img {
+            .showcase-content {
+               width: 90%;
+            }
+         }
+      }
+   }
+
+   // News and Events
+   .news-events {
+      background-color: $light-color;
+
+      .contents {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         grid-gap: 5rem;
+         padding: 2rem 0;
+
+         div {
+            text-align: center;
+            background-color: $primary-color;
+            padding: 2rem 1rem;
+            box-shadow: 0px 0px 5px $dark-color;
+
+            a {
+               color: $light-color;
+            }
+         }
+
+         .events {
+            background-color: $grey-color;
+
+            a {
+               color: $primary-color;
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 780px) {
+   // Home
+   .home {
+      // Showcase
+      .showcase {
+         &-img {
+            .showcase-content {
+               width: 80%;
+
+               h1 {
+                  font-size: 2rem;
+               }
+
+               h4 {
+                  font-size: 1rem;
+               }
+            }
+         }
+      }
+
+      // Who We are
+      .info-one {
+         .boxes {
+            grid-gap: 0.5rem;
+         }
+      }
+
+      .who-we-are {
+         .boxes {
+            grid-gap: 0.5rem;
+
+            .content {
+               margin-top: 0vh;
+            }
+         }
+         .quote {
+            width: 75%;
+         }
+      }
+   }
+
+   // News and Events
+   .news-events {
+      .contents {
+         grid-gap: 2rem;
+      }
+   }
+
+   // About
+   .about {
+      // Showcase
+      .showcase {
+         &-img {
+            .showcase-content {
+               width: 90%;
+
+               h1 {
+                  font-size: 2rem;
+               }
+            }
+         }
+      }
+
+      // Info Two
+      .info-two {
+         .boxes {
+            div:first-child {
+               h3 {
+                  margin-top: 10vh;
+               }
+            }
+         }
+      }
+   }
+
+   // Academics
+   .academics {
+      // Showcase
+      .showcase {
+         &-img {
+            .showcase-content {
+               h1 {
+                  font-size: 2rem;
+               }
+            }
+         }
+      }
+
+      .head-profile {
+         &-img {
+            height: 200px;
+            width: 200px;
+         }
+
+         &-content {
+            width: 90%;
+         }
+      }
+
+      .curriculum-box {
+         .boxes {
+            grid-gap: 1rem;
+
+            .box {
+               img {
+                  height: 200px;
+               }
+            }
+         }
+      }
+
+      .age-group {
+         .boxes {
+            grid-gap: 0.5rem;
+         }
+      }
+   }
+
+   // Why Monarch
+   .why-monarch {
+      // Showcase
+      .showcase {
+         &-img {
+            .showcase-content {
+               h1 {
+                  font-size: 2rem;
+               }
+            }
+         }
+      }
+
+      // Info One
+      .info-one {
+         p {
+            width: 90%;
+         }
+
+         .boxes {
+            grid-gap: 0.5rem;
+         }
+      }
+
+      // Mission
+      .mission {
+         p {
+            width: 60%;
+            font-size: 0.8rem;
+         }
+      }
+
+      // Vision
+      .vision {
+         p {
+            width: 60%;
+         }
+      }
+   }
+
+   // Directions
+   .direction {
+      // Showcase
+      .showcase {
+         &-img {
+            .showcase-content {
+               h1 {
+                  font-size: 2rem;
+               }
+            }
+         }
+      }
+
+      .travel-info {
+         .boxes {
+            grid-gap: 2rem;
+
+            .travel-content {
+               margin-top: 15vh;
+            }
+         }
+      }
+   }
+
+   // Contact
+   .contact {
+      .showcase {
+         // Showcase
+         .showcase {
+            &-img {
+               .showcase-content {
+                  h1 {
+                     font-size: 2rem;
+                  }
+               }
+            }
+         }
+      }
+
+      .contact-box {
+         .boxes {
+            div {
+               font-size: 1rem;
+               padding: 1rem 2rem;
+               margin-bottom: 2rem;
+               @include easeOut;
+            }
+         }
+      }
+   }
+
+   // Calender
+   .calender {
+      // Showcase
+      .showcase {
+         &-img {
+            .showcase-content {
+               h1 {
+                  font-size: 2rem;
+               }
+            }
+         }
+      }
+
+      .calender-container {
+         .calender-box {
+            .calender-content {
+               p {
+                  font-size: 0.8rem;
+               }
+            }
+         }
+      }
+   }
+
+   // News
+   .news-section {
+      .showcase {
+         // Showcase
+         .showcase {
+            &-img {
+               .showcase-content {
+                  h1 {
+                     font-size: 2rem;
+                  }
+               }
+            }
+         }
+      }
+   }
+   // Events
+   .events-section {
+      .showcase {
+         // Showcase
+         .showcase {
+            &-img {
+               .showcase-content {
+                  h1 {
+                     font-size: 2rem;
+                  }
+               }
+            }
+         }
+      }
+   }
+}

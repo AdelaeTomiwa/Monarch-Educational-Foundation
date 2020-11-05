@@ -19,32 +19,11 @@
             h1 {
                font-size: 3rem;
             }
-
-            h4 {
-               color: lighten($dark-color, 10%);
-            }
-
-            button {
-               padding: 0.5rem 1rem;
-               border: none;
-               outline: none;
-               background-color: $primary-color;
-               color: $light-color;
-               font-weight: bold;
-               font-size: 0.8rem;
-               margin: 1rem 0;
-               cursor: pointer;
-               @include easeOut;
-
-               &:hover {
-                  background-color: $light-color;
-                  color: $primary-color;
-               }
-            }
          }
 
          img {
             height: 100%;
+            object-fit: cover;
          }
       }
    }
@@ -73,7 +52,8 @@
          margin-top: 1rem;
 
          .img-container {
-            height: 400px;
+            // height: 400px;
+            width: 100%;
 
             img {
                height: 100%;
@@ -110,6 +90,7 @@
 
          img {
             height: 100%;
+            object-fit: cover;
          }
       }
    }
@@ -142,6 +123,7 @@
 
          img {
             height: 100%;
+            object-fit: cover;
          }
       }
    }
