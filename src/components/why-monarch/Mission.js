@@ -1,5 +1,4 @@
 import React from 'react';
-import GraduateBoy from '../../images/graduate-boy.jpg';
 import StudentWriting from '../../images/student-writing.jpg';
 
 function Mission() {
@@ -10,7 +9,7 @@ function Mission() {
                <span className='text-primary'>Mission</span>
             </h3>
             <p>
-               <span className='text-primary'>
+               <span className='text-secondary'>
                   Monarch Educational Foundation
                </span>{' '}
                is one of the Best Private Primary School in the Whole of Ibadan.

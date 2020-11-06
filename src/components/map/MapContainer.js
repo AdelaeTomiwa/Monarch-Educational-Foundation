@@ -17,35 +17,32 @@ class MapContainer extends Component {
                position={{ lat: location.lat, lng: location.lng }}
                id={index}
                key={index}
-               onClick={() => alert(123)}
+               onClick={() => alert('Monarch Educational Foundation')}
             />
          );
       });
    };
    render() {
       return (
-         <div>
-            <div className='container'>
-               <div className='map'>
-                  <Map
-                     google={this.props.google}
-                     zoom={8}
-                     className='direction-map'
-                     style={mapStyle}
-                     initialCenter={{ lat: 7.3775, lng: 3.947 }}
-                  >
-                     {this.showMap()}
-                  </Map>
-               </div>
-            </div>
+         <div className='map-container'>
+            <Map
+               google={this.props.google}
+               zoom={14}
+               className='direction-map'
+               style={mapStyle}
+               initialCenter={{ lat: 7.3775, lng: 3.947 }}
+            >
+               {this.showMap()}
+            </Map>
          </div>
       );
    }
 }
 
 const mapStyle = {
-   width: '500px',
-   height: '300px',
+   width: '100%',
+   height: '100%',
+   overflow: 'hidden',
 };
 
 export default GoogleApiWrapper({

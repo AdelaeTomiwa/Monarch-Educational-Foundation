@@ -10,7 +10,7 @@ function GettingHere() {
                For the Information on getting to Monarch Educational Foundation,
                please see our{' '}
                <Link to='/directions'>
-                  <span className='text-primary'>How to find us Page</span>
+                  <span className='text-secondary'>How to find us Page</span>
                </Link>
             </p>
          </div>

@@ -1,7 +1,6 @@
 import React from 'react';
 import ImgOne from '../../images/5.jpg';
 import ImgTwo from '../../images/6.jpg';
-import ImgThree from '../../images/7.jpg';
 
 function LatestEvents() {
    return (

@@ -140,6 +140,20 @@
       }
    }
 
+   // Map
+   .map {
+      // Showcase
+      .showcase {
+         &-img {
+            .showcase-content {
+               h1 {
+                  font-size: 2.5rem;
+               }
+            }
+         }
+      }
+   }
+
    // News
    .news-section {
       .showcase {
@@ -216,6 +230,18 @@
       }
    }
 
+   // Map
+   .map {
+      // Showcase
+      .showcase {
+         &-img {
+            .showcase-content {
+               width: 90%;
+            }
+         }
+      }
+   }
+
    // News and Events
    .news-events {
       background-color: $light-color;
@@ -242,6 +268,152 @@
 
             a {
                color: $primary-color;
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 880px) {
+   header {
+      .top-nav {
+         display: none;
+
+         ul {
+            width: 100%;
+
+            li {
+               margin: 0.3rem 1rem;
+
+               a {
+                  @include easeOut;
+
+                  &:hover {
+                     color: $primary-color;
+                  }
+               }
+            }
+         }
+      }
+
+      nav {
+         .nav {
+            justify-content: center;
+            padding: 0.5rem 0;
+
+            & .logo {
+               h2 {
+                  font-size: 1.5rem;
+               }
+
+               h4 {
+                  font-size: 0.8rem;
+               }
+            }
+
+            .burger {
+               display: block;
+               position: absolute;
+               top: 50%;
+               left: 3%;
+               transform: translate(-3%, -50%);
+            }
+
+            &-links {
+               position: absolute;
+               top: 100%;
+               left: -200%;
+               min-height: 100vh;
+            }
+
+            .nav-links.open {
+               display: block;
+               text-align: left;
+               position: absolute;
+               background-color: $grey-color;
+               top: 100%;
+               left: 0%;
+               width: 100%;
+               opacity: 0.9;
+
+               .quick-contact {
+                  flex-direction: column;
+                  width: 100%;
+                  padding: 0.5rem 0;
+                  h5 {
+                     margin: 0.5rem 0rem;
+                     width: 100%;
+                     padding: 0 2rem;
+                     border-bottom: 1px solid darken($grey-color, 10%);
+                  }
+               }
+
+               .nav-items {
+                  width: 100%;
+                  ul {
+                     flex-direction: column;
+
+                     .nav-item-mobile {
+                        display: block;
+                     }
+
+                     li {
+                        margin: 0.5rem 0;
+                        width: 100%;
+                        padding: 0.5rem 2rem;
+                        @include easeOut;
+
+                        a {
+                           display: inline-block;
+                           width: 100%;
+                        }
+
+                        &:hover {
+                           background-color: darken($grey-color, 10%);
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   .home,
+   .about,
+   .academics,
+   .why-monarch,
+   .calender,
+   .contact,
+   .direction,
+   .map,
+   .news-section,
+   .events-section {
+      margin-top: 5rem;
+   }
+
+   // Footer
+   footer {
+      .footer {
+         grid-template-columns: 1fr;
+         grid-gap: 0rem;
+         text-align: center;
+
+         .first-half {
+            &:first-child {
+               text-align: center;
+
+               ul {
+                  margin-left: 0rem;
+               }
+            }
+         }
+
+         .second-half {
+            ul {
+               li {
+                  text-align: center;
+               }
             }
          }
       }
@@ -421,10 +593,23 @@
 
       .travel-info {
          .boxes {
-            grid-gap: 2rem;
+            grid-gap: 1rem;
 
             .travel-content {
-               margin-top: 15vh;
+               margin-top: 8vh;
+            }
+         }
+      }
+   }
+
+   // Map
+   .map {
+      .showcase {
+         &-img {
+            .showcase-content {
+               h1 {
+                  font-size: 2rem;
+               }
             }
          }
       }

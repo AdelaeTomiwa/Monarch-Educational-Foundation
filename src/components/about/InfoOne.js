@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 // Importing Image
 import ImgOne from '../../images/13.jpg';
@@ -27,9 +26,12 @@ function InfoOne() {
                   </div>
                   <h3>Supportive Community</h3>
                   <p>
-                     When you arrive at Monarch Educational Foundation, Your
-                     Children are welcome by a friendly and welcoming community
-                     of staff and pupils.
+                     When you arrive at{' '}
+                     <span className='text-secondary'>
+                        Monarch Educational Foundation
+                     </span>
+                     , Your Children are welcome by a friendly and welcoming
+                     community of staff and pupils.
                   </p>
                </div>
             </div>

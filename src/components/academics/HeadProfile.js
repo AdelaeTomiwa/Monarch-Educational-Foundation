@@ -15,7 +15,7 @@ function HeadProfile() {
                   <h2>Head of Monarch Educational Foundation</h2>
                   <p>
                      At{' '}
-                     <span className='text-primary'>
+                     <span className='text-secondary'>
                         Monarch Educational Foundation
                      </span>
                      , our upmost responsibility is to ensure the growth and

@@ -40,7 +40,6 @@
    .travel-info {
       background-color: $grey-color;
       padding: 1rem 0;
-      // margin-bottom: 10vh;
 
       h3 {
          font-size: 1.3rem;
@@ -48,11 +47,11 @@
       }
       .boxes {
          display: grid;
-         grid-gap: 7rem;
+         grid-gap: 5rem;
          grid-template-columns: repeat(2, 1fr);
 
          .travel-content {
-            margin-top: 10vh;
+            margin-top: 8vh;
          }
 
          .img-container {
@@ -66,9 +65,28 @@
          }
       }
 
-      .map-content {
-         margin-top: 10vh;
-         margin-left: 5rem;
+      .map {
+         grid-template-columns: 1fr;
+         margin: 1rem 0;
+         button {
+            padding: 0.5rem 0;
+            cursor: pointer;
+            color: $light-color;
+            font-weight: bold;
+            background-color: $primary-color;
+            outline: none;
+            border: none;
+            font-size: 1rem;
+            box-shadow: 0px 0px 5px $dark-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include easeOut;
+
+            &:hover {
+               transform: scale(0.9);
+            }
+         }
       }
    }
 }

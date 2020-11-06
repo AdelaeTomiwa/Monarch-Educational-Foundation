@@ -10,7 +10,9 @@ function Footer() {
                   <div>
                      <div className='logo'>
                         <h2>Monarch Educational</h2>
-                        <h4>Foundation</h4>
+                        <h4>
+                           <span className='text-secondary'>Foundation</span>
+                        </h4>
                      </div>
 
                      <ul>
@@ -67,9 +69,12 @@ function Footer() {
                            </Link>
                         </li>
                         <li className='social'>
-                           <Link to='https://facebook.com/animefrida'>
+                           <a
+                              target='_blank'
+                              href='https://facebook.com/adelae.tomiwa'
+                           >
                               Facebook
-                           </Link>
+                           </a>
                         </li>
                      </ul>
                   </div>

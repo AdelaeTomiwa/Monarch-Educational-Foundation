@@ -8,7 +8,7 @@ function InfoOne() {
          <div className='container'>
             <h3>Why Monarch?</h3>
             <p>
-               <span className='text-primary'>
+               <span className='text-secondary'>
                   Monarch Educational Foundation
                </span>{' '}
                builds an Interactive Communication between the Pupils and their

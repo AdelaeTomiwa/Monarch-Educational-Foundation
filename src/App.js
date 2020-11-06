@@ -12,7 +12,9 @@ import News from './components/news/News';
 import Events from './components/events/Events';
 import Calender from './components/calender/Calender';
 import Directions from './components/directions/Directions';
+import Map from './components/map/Map';
 import Academics from './components/academics/Academics';
+import Gallery from './components/gallery/Gallery';
 import Uniform from './components/uniform/Uniform';
 
 function App() {
@@ -29,7 +31,9 @@ function App() {
                <Route path='/news-events/events' component={Events} />
                <Route path='/calender' component={Calender} />
                <Route path='/directions' component={Directions} />
+               <Route path='/map' component={Map} />
                <Route path='/academics' component={Academics} />
+               <Route path='/gallery' component={Gallery} />
                <Route path='/uniform/information' component={Uniform} />
             </Switch>
          </React.Fragment>

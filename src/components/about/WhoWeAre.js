@@ -6,7 +6,7 @@ function WhoWeAre() {
          <div className='container'>
             <h2>Who Are We?</h2>
             <p>
-               <span className='text-primary'>
+               <span className='text-secondary'>
                   Monarch Educational Foundation
                </span>{' '}
                is a school of upright morals and High Discipline. Pupils are at

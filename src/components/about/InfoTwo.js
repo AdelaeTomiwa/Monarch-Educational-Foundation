@@ -10,7 +10,7 @@ function InfoTwo() {
             <div>
                <h3>A Unique Primary School</h3>
                <p>
-                  <span className='text-primary'>
+                  <span className='text-secondary'>
                      Monarch Educational foundation
                   </span>{' '}
                   has been recognized as one of the top 10 Private Primary

@@ -5,7 +5,7 @@ function Schedule() {
    return (
       <div className='schedule'>
          <h3>Schedule a Visit at Monarch Educational Foundation</h3>
-         <Link>
+         <Link to='contact'>
             <button>
                Schedule a Visit <i className='fas fa-chevron-right'></i>
             </button>

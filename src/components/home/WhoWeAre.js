@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import ImageOne from '../../images/1.jpg';
 import ImageTwo from '../../images/2.jpg';
 import ImageThree from '../../images/3.jpg';
-import ImageFour from '../../images/4.jpg';
 
 function WhoWeAre() {
    return (
@@ -13,16 +12,16 @@ function WhoWeAre() {
          <div className='info-one'>
             <div className='container'>
                <div className='boxes'>
-                  <Link to='/academics'>
-                     <div>
-                        <img src={ImageTwo} alt='' />
-                        <h3>Academics</h3>
-                     </div>
-                  </Link>
                   <Link to='/about'>
                      <div>
                         <img src={ImageOne} alt='' />
                         <h3>Who We Are</h3>
+                     </div>
+                  </Link>
+                  <Link to='/academics'>
+                     <div>
+                        <img src={ImageTwo} alt='' />
+                        <h3>Academics</h3>
                      </div>
                   </Link>
                   <Link to='/community'>
@@ -43,7 +42,7 @@ function WhoWeAre() {
                   <div className='content'>
                      <h3>Who We Are</h3>
                      <p>
-                        <span className='text-primary'>
+                        <span className='text-secondary'>
                            Monarch Educational Foundation
                         </span>{' '}
                         is a school of Upright Morals and High Discipline. We
@@ -55,7 +54,7 @@ function WhoWeAre() {
                <div className='quote'>
                   <p>
                      "
-                     <span className='text-primary'>
+                     <span className='text-secondary'>
                         Monarch Educational Foundation
                      </span>{' '}
                      is an Academically Challenging School. Our number one Goal

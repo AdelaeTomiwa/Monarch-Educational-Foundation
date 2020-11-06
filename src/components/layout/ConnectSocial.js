@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 function ConnectSocial() {
    return (
@@ -7,27 +6,24 @@ function ConnectSocial() {
          <div className='container'>
             <h3>Connect With us on Social Media</h3>
             <div className='boxes'>
-               <Link to='https://facebook.com/monarchedu'>
+               <a target='_blank' href='https://facebook.com/adelae.tomiwa'>
                   <div className='facebook-div'>
-                     <h4>
-                        <i className='fab fa-facebook'></i> Facebook
-                     </h4>
+                     <i className='fab fa-facebook'></i>
+                     <h4>Facebook</h4>
                   </div>
-               </Link>
-               <Link to='https://twitter.com/monarchedu'>
+               </a>
+               <a target='_blank' href='https://twitter.com/TheTomMedia'>
                   <div className='twitter-div'>
-                     <h4>
-                        <i className='fab fa-twitter'></i> Twitter
-                     </h4>
+                     <i className='fab fa-twitter'></i>
+                     <h4>Twitter</h4>
                   </div>
-               </Link>
-               <Link to='https://instagram.com/monarchedu'>
+               </a>
+               <a target='_blank' href='https://instagram.com/the_tom_media'>
                   <div className='instagram-div'>
-                     <h4>
-                        <i className='fab fa-instagram'></i> Instagram
-                     </h4>
+                     <i className='fab fa-instagram'></i>
+                     <h4>Instagram</h4>
                   </div>
-               </Link>
+               </a>
             </div>
             <div className='connect-details'>
                <h4>Contact Us</h4>

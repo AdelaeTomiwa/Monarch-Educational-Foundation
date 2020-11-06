@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import ShowcaseImg from '../../images/showcase-reasons.jpg';
 
 function Showcase() {
@@ -9,7 +8,9 @@ function Showcase() {
             <img src={ShowcaseImg} alt='' />
             <div className='container'>
                <div className='showcase-content'>
-                  <h1>Why Monarch Educational Foundation?</h1>
+                  <h1>
+                     Why Monarch <span>Educational Foundation</span> ?
+                  </h1>
                </div>
             </div>
          </div>

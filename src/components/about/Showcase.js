@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import ShowcaseImg from '../../images/showcase-about.jpg';
 
 function Showcase() {

@@ -8,7 +8,9 @@
 @import 'events';
 @import 'calender';
 @import 'directions';
+@import 'map';
 @import 'academics';
+@import 'gallery';
 @import 'uniform';
 
 * {
@@ -52,7 +54,7 @@ header {
                @include easeOut;
 
                &:hover {
-                  color: $primary-color;
+                  color: $secondary-color;
                }
             }
          }
@@ -62,6 +64,7 @@ header {
    nav {
       background-color: $light-color;
       color: $dark-color;
+      position: relative;
 
       .nav {
          display: flex;
@@ -84,55 +87,78 @@ header {
             }
          }
 
+         .burger {
+            display: none;
+            div {
+               width: 28px;
+               height: 3px;
+               margin: 0 0 5px 0;
+               background-color: $primary-color;
+               @include easeOut;
+            }
+
+            &.close {
+               .line-1 {
+                  transform: rotate(45deg) translate(5px, 5px);
+               }
+               .line-2 {
+                  opacity: 0;
+               }
+               .line-3 {
+                  transform: rotate(-45deg) translate(6px, -6px);
+               }
+            }
+         }
+
          &-links {
             display: flex;
             align-items: flex-end;
             justify-content: center;
             flex-direction: column;
+            // width: 100%;
+            @include easeOut;
 
-            & :first-child {
+            .quick-contact {
                display: flex;
-               align-items: center;
-               justify-content: space-between;
-
                h5 {
+                  margin: 0 1rem;
+                  font-weight: lighter;
                   i {
                      margin-right: 0.5rem;
-                     color: $primary-color;
-                  }
-               }
-
-               div {
-                  display: flex;
-                  align-items: center;
-                  justify-content: space-between;
-                  margin-left: 2rem;
-                  position: relative;
-
-                  i {
-                     margin-right: 0.5rem;
-                     color: $primary-color;
+                     // color: $primary-color;
                   }
                }
             }
 
-            ul {
-               display: flex;
-               align-items: center;
-               justify-content: space-between;
+            .nav-items {
+               width: 100%;
+               ul {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
 
-               li {
-                  margin: 1rem 1rem 0;
+                  .nav-item-mobile {
+                     display: none;
+                  }
 
-                  a {
-                     @include easeOut;
+                  li {
+                     margin: 1rem 1rem 0;
+                     font-size: 1rem;
 
-                     &:hover {
-                        color: $primary-color;
+                     a {
+                        @include easeOut;
+
+                        &:hover {
+                           color: $secondary-color;
+                        }
                      }
                   }
                }
             }
+         }
+
+         .nav-links.open {
+            display: none;
          }
       }
    }

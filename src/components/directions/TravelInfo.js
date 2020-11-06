@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import VehicleImg from '../../images/vehicle.jpg';
-import MapContainer from './MapContainer';
+import TaxiImg from '../../images/taxi.jpg';
 
 function TravelInfo() {
    return (
@@ -25,7 +26,7 @@ function TravelInfo() {
             </div>
             <div className='boxes'>
                <div className='img-container'>
-                  <img src={VehicleImg} alt='' />
+                  <img src={TaxiImg} alt='' />
                </div>
                <div className='travel-content'>
                   <h3>Taxi</h3>
@@ -39,14 +40,11 @@ function TravelInfo() {
                   </p>
                </div>
             </div>
-            <div className='boxes'>
-               <div className='map-content'>
-                  <h3>Map</h3>
+            <Link to='/map'>
+               <div className='boxes map'>
+                  <button>Check Out the Map</button>
                </div>
-               <div className='img-container'>
-                  <MapContainer />
-               </div>
-            </div>
+            </Link>
          </div>
       </div>
    );
