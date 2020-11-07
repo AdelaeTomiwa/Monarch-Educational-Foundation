@@ -12,6 +12,8 @@
 @import 'academics';
 @import 'gallery';
 @import 'uniform';
+@import 'admission';
+@import 'schedule';
 
 * {
    margin: 0;
@@ -171,9 +173,9 @@ footer {
    .footer {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-gap: 2rem;
+      grid-gap: 1rem;
       text-align: center;
-      padding: 2rem 5rem;
+      padding: 2rem;
 
       .first-half {
          padding: 0.5rem 2rem;

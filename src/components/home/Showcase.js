@@ -14,7 +14,7 @@ function Showcase() {
                      Education in an environment of Faith and virtue for
                      Pre-Kindergarten through 8th Grade
                   </h4>
-                  <Link to='/contact'>
+                  <Link to='/admission'>
                      <button>ENROLL WITH US NOW</button>
                   </Link>
                </div>

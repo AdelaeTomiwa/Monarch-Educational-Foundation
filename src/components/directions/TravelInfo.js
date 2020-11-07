@@ -12,8 +12,8 @@ function TravelInfo() {
                <div className='travel-content'>
                   <h3>Private Car</h3>
                   <p>
-                     <span className='text-primary'>Monarch </span> can be reach
-                     via a public bus or a private vehicle. from london’s
+                     <span className='text-secondary'>Monarch </span> can be
+                     reach via a public bus or a private vehicle. from london’s
                      office, 50 meters from Total Garden.There is a road going
                      south. going straight through that route will get you to
                      Orita-Challenge. Monarch is less than 10 Minutes drive from
@@ -31,8 +31,8 @@ function TravelInfo() {
                <div className='travel-content'>
                   <h3>Taxi</h3>
                   <p>
-                     <span className='text-primary'>Monarch </span> can be reach
-                     via a public bus or a private vehicle. from london’s
+                     <span className='text-secondary'>Monarch </span> can be
+                     reach via a public bus or a private vehicle. from london’s
                      office, 50 meters from Total Garden.There is a road going
                      south. going straight through that route will get you to
                      Orita-Challenge. Monarch is less than 10 Minutes drive from

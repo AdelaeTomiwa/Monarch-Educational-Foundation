@@ -14,8 +14,10 @@ import Calender from './components/calender/Calender';
 import Directions from './components/directions/Directions';
 import Map from './components/map/Map';
 import Academics from './components/academics/Academics';
+import Admission from './components/admission/Admission';
 import Gallery from './components/gallery/Gallery';
 import Uniform from './components/uniform/Uniform';
+import ScheduleContainer from './components/schedule/Schedule-container';
 
 function App() {
    return (
@@ -33,8 +35,10 @@ function App() {
                <Route path='/directions' component={Directions} />
                <Route path='/map' component={Map} />
                <Route path='/academics' component={Academics} />
+               <Route path='/admission' component={Admission} />
                <Route path='/gallery' component={Gallery} />
                <Route path='/uniform/information' component={Uniform} />
+               <Route path='/schedule' component={ScheduleContainer} />
             </Switch>
          </React.Fragment>
       </Router>

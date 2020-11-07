@@ -341,12 +341,15 @@
 
    .about,
    .academics,
+   .admission,
    .why-monarch,
    .calender,
    .direction,
+   .map,
    .contact,
    .news-section,
-   .events-section {
+   .events-section,
+   .schedule-container {
       // Showcase
       .showcase {
          &-img {
@@ -394,13 +397,15 @@
    .home,
    .about,
    .academics,
+   .admission,
    .why-monarch,
    .calender,
    .contact,
    .direction,
    .map,
    .news-section,
-   .events-section {
+   .events-section,
+   .schedule-container {
       margin-top: 4rem;
    }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import HeadSchool from '../../images/head-school.jpg';
+import HeadSchool from '../../images/head-of-school.jpg';
 
 function HeadProfile() {
    return (

@@ -54,6 +54,9 @@ function Footer() {
                            <Link to='/academics'>Academics</Link>
                         </li>
                         <li>
+                           <Link to='/admission'>Admission</Link>
+                        </li>
+                        <li>
                            <Link to='/why-monarch'>Why Monarch</Link>
                         </li>
                      </ul>
@@ -63,11 +66,11 @@ function Footer() {
                         <li>
                            <Link to='/calender'>Calender</Link>
                         </li>
-                        <li>
+                        {/* <li>
                            <Link to='/uniform/information'>
                               Uniform Information
                            </Link>
-                        </li>
+                        </li> */}
                         <li className='social'>
                            <a
                               target='_blank'

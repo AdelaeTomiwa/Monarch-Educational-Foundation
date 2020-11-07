@@ -82,6 +82,20 @@
       }
    }
 
+   // Admission
+   .admission {
+      // Showcase
+      .showcase {
+         &-img {
+            .showcase-content {
+               h1 {
+                  font-size: 2.5rem;
+               }
+            }
+         }
+      }
+   }
+
    // Why Monarch
    .why-monarch {
       // Showcase
@@ -185,6 +199,20 @@
          }
       }
    }
+
+   // Schedule Container
+   .schedule-container {
+      // Showcase
+      .showcase {
+         &-img {
+            .showcase-content {
+               h1 {
+                  font-size: 2.5rem;
+               }
+            }
+         }
+      }
+   }
 }
 
 @media screen and (max-width: 1024px) {
@@ -214,6 +242,18 @@
       .head-profile {
          .boxes {
             grid-gap: 2rem;
+         }
+      }
+   }
+
+   // Admission
+   .admission {
+      // Showcase
+      .showcase {
+         &-img {
+            .showcase-content {
+               width: 90%;
+            }
          }
       }
    }
@@ -330,16 +370,15 @@
                display: block;
                text-align: left;
                position: absolute;
-               background-color: $grey-color;
+               background-color: rgba($grey-color, 0.9);
                top: 100%;
                left: 0%;
                width: 100%;
-               opacity: 0.9;
 
                .quick-contact {
                   flex-direction: column;
                   width: 100%;
-                  padding: 0.5rem 0;
+                  padding: 0.5rem 0 0 0;
                   h5 {
                      margin: 0.5rem 0rem;
                      width: 100%;
@@ -358,7 +397,7 @@
                      }
 
                      li {
-                        margin: 0.5rem 0;
+                        margin: 0.3rem 0;
                         width: 100%;
                         padding: 0.5rem 2rem;
                         @include easeOut;
@@ -382,13 +421,15 @@
    .home,
    .about,
    .academics,
+   .admission,
    .why-monarch,
    .calender,
    .contact,
    .direction,
    .map,
    .news-section,
-   .events-section {
+   .events-section,
+   .schedule-container {
       margin-top: 5rem;
    }
 
@@ -534,6 +575,22 @@
       .age-group {
          .boxes {
             grid-gap: 0.5rem;
+         }
+      }
+   }
+
+   // Admission
+   .admission {
+      // Showcase
+      .showcase {
+         &-img {
+            .showcase-content {
+               width: 90%;
+
+               h1 {
+                  font-size: 2rem;
+               }
+            }
          }
       }
    }
@@ -691,6 +748,20 @@
                   h1 {
                      font-size: 2rem;
                   }
+               }
+            }
+         }
+      }
+   }
+
+   // Schedule Container
+   .schedule-container {
+      // Showcase
+      .showcase {
+         &-img {
+            .showcase-content {
+               h1 {
+                  font-size: 2rem;
                }
             }
          }

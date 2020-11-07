@@ -24,7 +24,7 @@ function WhoWeAre() {
                         <h3>Academics</h3>
                      </div>
                   </Link>
-                  <Link to='/community'>
+                  <Link to=''>
                      <div>
                         <img src={ImageThree} alt='' />
                         <h3>Community</h3>

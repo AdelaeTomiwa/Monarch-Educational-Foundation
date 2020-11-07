@@ -1,0 +1,82 @@
+.schedule-container {
+   margin-top: 8rem;
+
+   // Showcase
+   .showcase {
+      &-img {
+         height: 70vh;
+         position: relative;
+
+         .showcase-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 80%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+            background-color: rgba($grey-color, 0.6);
+            padding: 1rem 2rem;
+            box-shadow: 0px 0px 50px $dark-color;
+
+            h1 {
+               font-size: 3rem;
+            }
+         }
+
+         img {
+            height: 100%;
+            object-fit: cover;
+         }
+      }
+   }
+
+   .form {
+      background-color: $grey-color;
+      padding: 1.5rem 0;
+
+      h2 {
+         text-align: center;
+      }
+
+      form {
+         div {
+            width: 100%;
+
+            input,
+            textarea {
+               width: 100%;
+               padding: 0.5rem 1rem;
+               margin: 0.5rem 0;
+               background-color: $light-color;
+               border: 2px solid lighten($dark-color, 50%);
+               font-weight: bold;
+            }
+         }
+
+         .submit-btn {
+            width: 100%;
+            margin: 1rem 0;
+            button {
+               width: 100%;
+               padding: 0.5rem 0;
+               box-shadow: 0px 0px 5px $dark-color;
+               background-color: $primary-color;
+               color: $light-color;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               outline: none;
+               border: none;
+               font-weight: bold;
+               font-size: 1rem;
+               cursor: pointer;
+               @include easeOut;
+
+               &:hover {
+                  background-color: darken($primary-color, 5%);
+               }
+            }
+         }
+      }
+   }
+}

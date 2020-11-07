@@ -8,7 +8,9 @@ function Showcase() {
             <img src={ShowcaseImg} alt='' />
             <div className='container'>
                <div className='showcase-content'>
-                  <h1>Map To Monarch Educational Foundation</h1>
+                  <h1>
+                     Map To Monarch <span>Educational Foundation</span>
+                  </h1>
                </div>
             </div>
          </div>
