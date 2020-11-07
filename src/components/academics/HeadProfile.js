@@ -13,6 +13,7 @@ function HeadProfile() {
                </div>
                <div className='head-profile-content'>
                   <h2>Head of Monarch Educational Foundation</h2>
+                  <p></p>
                   <p>
                      At{' '}
                      <span className='text-secondary'>

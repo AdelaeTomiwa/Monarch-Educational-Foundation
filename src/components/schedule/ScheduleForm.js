@@ -1,43 +1,72 @@
-import React, { Component } from 'react';
+import React, { useState, useRef, createRef } from 'react';
+import InputField from './InputField';
 
-class ScheduleForm extends Component {
-   render() {
-      return (
-         <div className='form'>
-            <div className='container'>
-               <h2>Schedule a Visit</h2>
-               <form>
-                  <div>
-                     <input type='text' name='Name' placeholder='Name' />
-                  </div>
-                  <div>
-                     <input type='email' name='Email' placeholder='Email' />
-                  </div>
+function ScheduleForm() {
+   const inputRefs = useRef([createRef(), createRef(), createRef()]);
+   const [data, setData] = useState({});
 
-                  <div className='discussion'>
-                     <textarea
-                        name='schedule discussion'
-                        id=''
-                        cols='10'
-                        rows='10'
-                        placeholder='Matter of Discussion?'
-                     ></textarea>
+   const handleChange = (name, value) => {
+      setData((prev) => ({ ...prev, [name]: value }));
+   };
 
-                     <div>
-                        <input
-                           type='date'
-                           name='date'
-                           placeholder='Date of Visitation'
-                        />
-                     </div>
-                  </div>
-                  <div className='submit-btn'>
-                     <button type='submit'>Submit</button>
-                  </div>
-               </form>
-            </div>
+   const submitForm = (e) => {
+      e.preventDefault();
+      let isValid = true;
+
+      for (let i = 0; i < inputRefs.current.length; i++) {
+         const valid = inputRefs.current[i].current.validate();
+
+         if (!valid) {
+            isValid = false;
+         }
+
+         if (!isValid) {
+            return;
+         }
+      }
+   };
+
+   return (
+      <div className='form'>
+         <div className='container'>
+            <h2>Schedule a Visit</h2>
+
+            <form onSubmit={submitForm}>
+               <InputField
+                  ref={inputRefs.current[0]}
+                  name='name'
+                  placeholder='Name'
+                  type='text'
+                  onChange={handleChange}
+                  validation={'required|min:3'}
+               />
+               <InputField
+                  ref={inputRefs.current[1]}
+                  name='email'
+                  placeholder='Email'
+                  type='email'
+                  onChange={handleChange}
+                  validation={'required'}
+               />
+
+               <label htmlFor='date-of-visit'>Date of Visitation</label>
+               <InputField
+                  ref={inputRefs.current[2]}
+                  name='dateOfVisit'
+                  id='date-of-visit'
+                  placeholder='Date of Visitation'
+                  type='date'
+                  onChange={handleChange}
+                  validation={'required'}
+               />
+
+               <div className='submit-btn'>
+                  <button type='submit'>Submit</button>
+               </div>
+            </form>
          </div>
-      );
-   }
+      </div>
+   );
 }
+
 export default ScheduleForm;

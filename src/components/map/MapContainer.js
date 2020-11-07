@@ -3,11 +3,13 @@ import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 
 class MapContainer extends Component {
    state = {
-      locations: [
-         { lat: 7.4342, lng: 3.9496 },
-         { lat: 7.3415, lng: 3.8723 },
-         { lat: 7.4356, lng: 3.9824 },
-      ],
+      locations: [{ lat: 7.3775, lng: 3.947 }],
+   };
+
+   showText = () => {
+      const div = document.createElement('div');
+      div.innerHTML = 'Monarch Educational Foundation';
+      document.body.appendChild(div);
    };
 
    showMap = () => {
@@ -17,7 +19,7 @@ class MapContainer extends Component {
                position={{ lat: location.lat, lng: location.lng }}
                id={index}
                key={index}
-               onClick={() => alert('Monarch Educational Foundation')}
+               onClick={this.showText}
             />
          );
       });

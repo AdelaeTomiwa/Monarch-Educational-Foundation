@@ -39,6 +39,10 @@
       }
 
       form {
+         label {
+            font-size: 0.8rem;
+            font-weight: bold;
+         }
          div {
             width: 100%;
 
@@ -49,6 +53,15 @@
                margin: 0.5rem 0;
                background-color: $light-color;
                border: 2px solid lighten($dark-color, 50%);
+               font-weight: bold;
+            }
+
+            input.error {
+               border: 2px solid $danger-color;
+            }
+
+            .error {
+               color: $danger-color;
                font-weight: bold;
             }
          }
